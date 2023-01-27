@@ -25,6 +25,10 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
     },
+    {
+      path: '/cv',
+      redirect: {name: 'contact'},
+    },
   ],
 })
 
