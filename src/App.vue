@@ -12,9 +12,9 @@ import Footer from '@/components/Footer.vue'
       <RouterLink to="/about">
         <span class="material-icons">info</span>About
       </RouterLink>
-      <a><span class="material-icons">delete</span> CSS</a>
-      <a><span class="material-icons">code</span> Algorithms</a>
-      <a><span class="material-icons">build</span> Resources</a>
+      <RouterLink to="/contact"
+        ><span class="material-icons">mail</span> Contact</RouterLink
+      >
     </nav>
   </header>
   <div class="view">
@@ -36,21 +36,15 @@ nav {
   display: flex;
   padding: 1rem;
 
-  font-size: 20pt;
+  font-size: 1.5rem;
 
   height: $nav-height;
   justify-content: center;
   align-items: flex-start;
 
   a {
-    display: flex;
-    align-items: center;
     padding: 0 1rem;
     border-left: 1px solid $c-accent-lime;
-    text-align: center;
-    span {
-      margin-right: 0.5rem;
-    }
   }
 }
 

@@ -39,26 +39,30 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 .footer-items {
   max-width: 60ch;
   margin: 1rem 1rem 1.5rem 1rem;
   color: $c-text-mute;
   text-align: center;
-  div:first-of-type {
-    margin-bottom: 0.5rem;
-  }
 }
 .footer-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
+  margin: 0.35rem 0;
   a {
     color: $c-text-soft;
     fill: $c-text-soft;
-    height: 32px;
-    width: 32px;
+    height: 24px;
+    width: 24px;
+  }
+
+  .material-icons {
+    margin-top: -0.15em;
+    font-size: 1.5em;
   }
 }
 
