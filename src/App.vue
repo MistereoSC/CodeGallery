@@ -1,91 +1,68 @@
 <script setup lang="ts">
 import {RouterLink, RouterView} from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+    <nav>
+      <RouterLink to="/">
+        <span class="material-icons">home</span>Home
+      </RouterLink>
+      <RouterLink to="/about">
+        <span class="material-icons">info</span>About
+      </RouterLink>
+      <a><span class="material-icons">delete</span> CSS</a>
+      <a><span class="material-icons">code</span> Algorithms</a>
+      <a><span class="material-icons">build</span> Resources</a>
+    </nav>
   </header>
-
-  <RouterView />
+  <div class="view">
+    <RouterView />
+  </div>
+  <footer>
+    <Footer></Footer>
+  </footer>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+<style lang="scss" scoped>
+@import '@/assets/sass/_colors.scss';
+$nav-height: 5rem;
+.view {
+  min-height: calc(100vh - $nav-height);
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
+  display: flex;
+  padding: 1rem;
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
+  font-size: 20pt;
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
+  height: $nav-height;
+  justify-content: center;
+  align-items: flex-start;
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
+  a {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    align-items: center;
+    padding: 0 1rem;
+    border-left: 1px solid $c-accent-lime;
+    text-align: center;
+    span {
+      margin-right: 0.5rem;
+    }
   }
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
+nav {
+  a.router-link-exact-active {
+    color: var(--color-text);
   }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  a.router-link-exact-active:hover {
+    background-color: transparent;
   }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+  a:first-of-type {
+    border: 0;
   }
 }
 </style>
