@@ -2,9 +2,7 @@
   <div class="footer-container">
     <div class="footer-line"></div>
     <div class="footer-items">
-      <div>
-        <span>Sebastian Lehmann</span>
-      </div>
+      <p>Sebastian Lehmann</p>
       <div class="footer-icons">
         <a
           class="material-icons f-icon"
@@ -25,9 +23,12 @@
           </svg>
         </a>
       </div>
-      <div>
-        <span>sol.mistereo@gmail.com</span>
-      </div>
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
+      </nav>
+      <div></div>
     </div>
   </div>
 </template>
@@ -40,24 +41,44 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem 0 0.3rem 0;
+    a {
+      font-size: 1.15rem;
+      border-left: 1px solid $c-text-very-mute;
+      padding: 0 1rem;
+      color: $c-text-soft;
+    }
+    a:first-of-type {
+      border: 0;
+    }
+  }
 }
 .footer-items {
   max-width: 60ch;
-  margin: 1rem 1rem 1.5rem 1rem;
-  color: $c-text-mute;
+  margin: 1rem 0 1.5rem 0;
+  color: $c-text-soft;
   text-align: center;
+
+  p {
+    font-size: 1.15rem;
+  }
 }
 .footer-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 0.35rem 0;
+  margin: 0.75rem 0;
+
   a {
     color: $c-text-soft;
     fill: $c-text-soft;
-    height: 24px;
-    width: 24px;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   .material-icons {
@@ -67,6 +88,13 @@
 }
 
 @media (hover: hover) {
+  nav {
+    a:hover {
+      color: $c-accent-lime;
+      fill: $c-accent-lime;
+      background-color: transparent;
+    }
+  }
   a:hover {
     color: $c-accent-lime;
     fill: $c-accent-lime;
@@ -77,20 +105,6 @@
 .footer-line {
   height: 2px;
   background-color: $c-accent-lime;
-  width: min(90%, 40ch);
+  width: min(90%, 30ch);
 }
 </style>
-
-<script lang="ts">
-export default {
-  components: {},
-  props: [],
-  emits: [],
-  data() {
-    return {}
-  },
-  mounted() {},
-  methods: {},
-  computed: {},
-}
-</script>

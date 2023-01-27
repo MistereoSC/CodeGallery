@@ -101,7 +101,7 @@
     font-size: 1.2rem;
     font-weight: 300;
     color: $c-text-mute;
-    margin-bottom: -0.4em;
+    margin-bottom: -0.25em;
     margin-left: 0.5em;
   }
   h2 {
@@ -119,7 +119,8 @@
   p {
     .i {
       font-style: italic;
-      color: $c-text-very-mute;
+      color: $c-text-mute;
+      margin-right: 0.3rem;
     }
   }
   .material-icons {

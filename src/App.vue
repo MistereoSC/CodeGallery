@@ -1,21 +1,14 @@
 <script setup lang="ts">
 import {RouterLink, RouterView} from 'vue-router'
 import Footer from '@/components/Footer.vue'
+import Navbar from '@/components/Navbar.vue'
 </script>
 
 <template>
   <header>
-    <nav>
-      <RouterLink to="/">
-        <span class="material-icons">home</span>Home
-      </RouterLink>
-      <RouterLink to="/about">
-        <span class="material-icons">info</span>About
-      </RouterLink>
-      <RouterLink to="/contact"
-        ><span class="material-icons">mail</span> Contact</RouterLink
-      >
-    </nav>
+    <div class="navbar">
+      <Navbar> </Navbar>
+    </div>
   </header>
   <div class="view">
     <RouterView />
@@ -27,36 +20,22 @@ import Footer from '@/components/Footer.vue'
 
 <style lang="scss" scoped>
 @import '@/assets/sass/_colors.scss';
-$nav-height: 5rem;
+$nav-height: 3.5rem;
+.navbar {
+  height: $nav-height;
+}
 .view {
   min-height: calc(100vh - $nav-height);
 }
 
-nav {
-  display: flex;
-  padding: 1rem;
-
-  font-size: 1.5rem;
-
-  height: $nav-height;
-  justify-content: center;
-  align-items: flex-start;
-
-  a {
-    padding: 0 1rem;
-    border-left: 1px solid $c-accent-lime;
+@media (max-width: 720px) {
+  footer {
+    display: none;
   }
-}
-
-nav {
-  a.router-link-exact-active {
-    color: var(--color-text);
-  }
-  a.router-link-exact-active:hover {
-    background-color: transparent;
-  }
-  a:first-of-type {
-    border: 0;
+  .view {
+    margin-top: -$nav-height;
+    margin-bottom: $nav-height;
+    padding-top: 2rem;
   }
 }
 </style>

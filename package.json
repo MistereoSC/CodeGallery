@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "serve": "run-p build preview"
+    "serve": "npm run build && vite preview --host"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
