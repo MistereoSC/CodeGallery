@@ -1,9 +1,7 @@
 # CodeGallery
 
-WIP
-Vue3, Vue Typescript, Vue Routing, Pinia, Sass
-
-
+My personal Website (very much WIP)
+https://mistereo.web.app/
 
 
 ## Project Setup

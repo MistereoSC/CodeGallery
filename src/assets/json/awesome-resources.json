@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Codepen",
+    "url": "https://codepen.io/",
+    "previewUrl": "https://i.imgur.com/n0bSfY3.png",
+    "description": "Test your front-end code snippets, or discover cool effects and components."
+  },
+  {
+    "id": 2,
+    "title": "Omatsuri",
+    "url": "https://omatsuri.app/",
+    "previewUrl": "https://i.imgur.com/KEh6FbT.png",
+    "description": "Discover lots of awesome tools, ranging from Lorem Ipsum generators to Gradient generators"
+  },
+  {
+    "id": 3,
+    "title": "Haikei",
+    "url": "https://haikei.app/",
+    "previewUrl": "https://i.imgur.com/mULpEJF.png",
+    "description": "Generate unique SVG design assets, ready to use with your design tools and workflow."
+  },
+  {
+    "id": 4,
+    "title": "Font Flipper",
+    "url": "https://fontflipper.com/",
+    "previewUrl": "https://i.imgur.com/QQugXdj.png",
+    "description": "Find your perfect match! Swipe through fonts until you find the perfect font combination."
+  },
+  {
+    "id": 5,
+    "title": "ColorSpace",
+    "url": "https://mycolor.space/",
+    "previewUrl": "https://i.imgur.com/VDvw4P6.png",
+    "description": "Enter a color, and this site will generate you a long list of fitting color pallets."
+  },
+  {
+    "id": 6,
+    "title": "Adobe Colors",
+    "url": "https://color.adobe.com/de/create/color-wheel",
+    "previewUrl": "https://i.imgur.com/43upjvy.png",
+    "description": "Create your own color pallet with ease."
+  },
+  {
+    "id": 7,
+    "title": "Gradient Magic",
+    "url": "https://www.gradientmagic.com/",
+    "previewUrl": "https://i.imgur.com/uEcvLcQ.png",
+    "description": "This site offers a variety of awesome gradient effects."
+  },
+  {
+    "id": 8,
+    "title": "UI Gradients",
+    "url": "https://uigradients.com/",
+    "previewUrl": "https://i.imgur.com/vNHofkF.png",
+    "description": "Browse through lots of different gradients."
+  },
+  {
+    "id": 9,
+    "title": "Cubic Bezier",
+    "url": "https://cubic-bezier.com/",
+    "previewUrl": "https://i.imgur.com/sdUBz0J.png",
+    "description": "Create the perfect Cubic Bezier curve for your CSS animations."
+  },
+  {
+    "id": 10,
+    "title": "Bundlephobia",
+    "url": "https://bundlephobia.com/",
+    "previewUrl": "https://i.imgur.com/SawrOE8.png",
+    "description": "Anxious about how large all your NPM packages are ? Find out how massive these packages really are."
+  }
+]

@@ -6,13 +6,13 @@
         <span class="material-icons">home</span>
         <p>Home</p>
       </RouterLink>
-      <RouterLink to="/about">
-        <span class="material-icons">info</span>
-        <p>About</p>
+      <RouterLink to="/cssgallery">
+        <span class="material-icons">code</span>
+        <p>CSS Gallery</p>
       </RouterLink>
       <RouterLink to="/contact">
         <span class="material-icons">mail</span>
-        <p>Contact</p>
+        <p>About</p>
       </RouterLink>
     </nav>
   </div>
@@ -47,19 +47,17 @@ nav {
     background: $c-background;
     filter: drop-shadow(0 -5px 3px black);
     height: 100%;
-    max-height: 4rem;
+    max-height: 3rem;
     overflow-y: hidden;
 
     transition: max-height 0.5s ease-in-out;
   }
   .nav-burger {
     display: block;
-    align-self: flex-start;
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-radius: 1rem;
     z-index: 2;
-    margin-top: 0.8rem;
     transform: rotate(-90deg);
     transition: transform 0.5s ease-in-out;
   }
@@ -79,15 +77,16 @@ nav {
     a {
       flex-direction: column-reverse;
       border: none;
-      height: 18rem;
-      width: 3rem;
+      height: rem;
+      width: 2rem;
       border-radius: 1rem;
       span {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
       p {
-        font-size: 2rem;
-        transform: rotate(270deg) translate(3rem, 0);
+        font-size: 1.5rem;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
       }
       .material-icons {
         margin: 0;
@@ -97,13 +96,14 @@ nav {
   }
 
   .expanded {
-    max-height: 16rem;
+    max-height: 14rem;
   }
 }
 
 nav {
   a.router-link-exact-active {
     color: var(--color-text);
+    cursor: default;
   }
   a.router-link-exact-active:hover {
     background-color: transparent;

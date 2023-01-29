@@ -12,8 +12,9 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 200px;
-  width: 25rem;
+
+  height: 10rem;
+  width: 20rem;
   user-select: none;
   filter: drop-shadow(0.2rem 0.2rem 0.25rem black);
   border-radius: 1rem;
@@ -34,12 +35,12 @@
     object-fit: fill;
     border-radius: 1rem;
     opacity: 0.8;
-    transition: opacity 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     background-color: $c-background-3;
   }
 
   span {
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     text-align: center;
     top: 1.5rem;
     font-size: 2rem;
@@ -51,9 +52,14 @@
   &:hover {
     transform: translate(-0.25rem, -0.25rem);
     filter: drop-shadow(0.45rem 0.45rem 0.5rem black);
-    background-color: $c-background-highlight;
+    background: $c-background-highlight;
     img {
-      opacity: 0.1;
+      opacity: 0.2;
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+    }
+    span {
+      background: rgba($c-background, 0);
     }
     .slot-description {
       color: $c-text;

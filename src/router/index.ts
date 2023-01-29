@@ -29,6 +29,16 @@ const router = createRouter({
       path: '/cv',
       redirect: {name: 'contact'},
     },
+    {
+      path: '/cssgallery',
+      name: 'css-gallery',
+      component: () => import('../views/CSSGallery.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('../views/NotFound.vue'),
+    },
   ],
 })
 

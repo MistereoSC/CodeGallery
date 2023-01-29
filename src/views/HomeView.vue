@@ -2,6 +2,7 @@
   <div class="home-spacer">
     <div class="home-container">
       <AwesomeResources></AwesomeResources>
+      <GitTracker></GitTracker>
     </div>
   </div>
 </template>
@@ -10,7 +11,7 @@
 @import '@/assets/sass/_colors.scss';
 .home-spacer {
   display: grid;
-  grid-template-columns: 1fr 90vw 1fr;
+  grid-template-columns: 1fr 82vw 1fr;
   justify-items: center;
 }
 .home-container {
@@ -22,4 +23,6 @@
 
 <script lang="ts" setup>
 import AwesomeResources from '@/components/AwesomeResources.vue'
+//@ts-ignore
+import GitTracker from '@/components/GitTracker.vue'
 </script>

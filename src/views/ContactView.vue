@@ -44,40 +44,14 @@
         </a>
         but here are some of my favorite so far!
       </p>
-      <div class="flex-v">
+      <div class="project-cards">
         <ProjectCard
-          title="MHGUTree"
-          url="https://github.com/MistereoSC/MHGUTree"
-          src="https://i.imgur.com/wzRPAnc.png"
+          v-for="item in GitSettings.featuredRaw"
+          :title="item.title"
+          :url="item.url"
+          :src="item.previewUrl"
         >
-          Web Project to visualize all 10.000+ Weapons available in MHGU, and
-          how to craft them, as a tree structure
-        </ProjectCard>
-        <ProjectCard
-          title="GW2Stats"
-          url="https://github.com/MistereoSC/GW2Stats"
-          src="https://i.imgur.com/aAlYNsP.png"
-        >
-          Web Project that lets you view the inventories of all your characters
-          without having to log in.<br />
-          I created it as an exercise in working with APIs.
-        </ProjectCard>
-        <ProjectCard
-          title="D2RRuneCalc"
-          url="https://github.com/MistereoSC/D2RRuneCalc"
-          src="https://i.imgur.com/gP9UL2b.png"
-        >
-          Web Project for Diablo 2 to list all existing Runecrafts, and show
-          which Items are craftable with the runes currently owned
-        </ProjectCard>
-        <ProjectCard
-          title="conclurer/midnightboard"
-          url="https://github.com/conclurer/midnightboard"
-        >
-          University Project for the development of a digital notice board,
-          using Vue.js as the frontend and Sails.js as the backend. I worked
-          mostly on the backend, but also helped out with the frontend in the
-          end.
+          {{ item.description }}
         </ProjectCard>
       </div>
     </div>
@@ -87,6 +61,14 @@
 <style lang="scss" scoped>
 @import '@/assets/sass/_colors.scss';
 
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+  gap: 2rem;
+  width: 70ch;
+}
 .contact-main {
   display: flex;
   flex-direction: column;
@@ -132,7 +114,7 @@ ul {
   margin-left: 2rem;
   line-height: 1.6;
   li {
-    font-size: 1.5rem;
+    font-size: 1rem;
     list-style: none;
     img {
       width: 1em;
@@ -155,6 +137,7 @@ ul {
 }
 </style>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import ProjectCard from '@/components/ProjectCard.vue'
+import GitSettings from '@/assets/json/git-projects.json'
 </script>

@@ -1,0 +1,31 @@
+{
+  "name": "MistereoSC",
+  "ignored": ["Gloomhaven-Organizer"],
+  "ignoredImages" : ["midnightboard", "AoC2022"],
+  "featuredRaw": [
+    {
+      "title": "MHGUTree",
+      "url": "https://github.com/MistereoSC/MHGUTree",
+      "previewUrl": "https://i.imgur.com/wzRPAnc.png",
+      "description": "Web Project to visualize all 10.000+ Weapons available in MHGU, and how to craft them, as a tree structure"
+    },
+    {
+      "title": "GW2Stats",
+      "url": "https://github.com/MistereoSC/GW2Stats",
+      "previewUrl": "https://i.imgur.com/aAlYNsP.png",
+      "description": "Web Project that lets you view the inventories of all your characters without having to log in.<br /> I created it as an exercise in working with APIs."
+    },
+    {
+      "title": "D2RRuneCalc",
+      "url": "https://github.com/MistereoSC/D2RRuneCalc",
+      "previewUrl": "https://i.imgur.com/gP9UL2b.png",
+      "description": "Web Project for Diablo 2 to list all existing Runecrafts, and show which Items are craftable with the runes currently owned"
+    },
+    {
+      "title": "conclurer/midnightboard",
+      "url": "https://github.com/conclurer/midnightboard",
+      "ignorePreview": true,
+      "description": "University Project for the development of a digital notice board, using Vue.js as the frontend and Sails.js as the backend. I worked mostly on the backend, but also helped out with the frontend in the end."
+    }
+  ]
+}

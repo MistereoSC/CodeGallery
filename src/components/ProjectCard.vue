@@ -1,6 +1,7 @@
 <template>
   <div class="proj-card-main">
     <img v-if="src" class="proj-bg-img" :src="src" />
+    <img v-else-if="imgSrc" class="proj-bg-img" :src="imgSrc" />
     <span class="proj-row">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +24,7 @@
 .proj-card-main {
   display: flex;
   flex-direction: column;
-  height: 200px;
-  margin: 1rem 0;
+  min-height: 11rem;
   width: min(100%, 70ch);
 
   background: $c-background-3;
@@ -33,7 +33,6 @@
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
-
   img {
     position: absolute;
     right: 0;
@@ -61,8 +60,8 @@
   }
   svg {
     fill: $c-text;
-    width: 18px;
-    height: 18px;
+    width: 1.2rem;
+    height: 1.2rem;
     margin-right: 0.4rem;
     margin-bottom: -0.1rem;
   }
@@ -83,6 +82,35 @@ export default {
     title: String,
     src: String,
     url: String,
+    gitName: String,
+    ignorePreview: Boolean,
+  },
+  data() {
+    return {
+      imgSrc: null,
+    }
+  },
+  async created() {
+    if (!this.ignorePreview && !this.src) {
+      const md = await fetch(
+        'https://raw.githubusercontent.com/' +
+          this.gitName +
+          '/' +
+          this.title +
+          '/master/README.md'
+      )
+        .then((data) => {
+          return data.text()
+        })
+        .catch((err) => {
+          console.log('Error fetching image:', err)
+          return err
+        })
+      let src = md.match(/https:\/\/i\.imgur\.com\/.*\.[^\)]*/)
+      if (src) {
+        this.imgSrc = src
+      }
+    }
   },
 }
 </script>
