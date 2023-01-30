@@ -1,4 +1,4 @@
-$c-background: hsl(255,30%,5%);
+$c-background: hsl(255,30%,5%) ;
 $c-background-2: hsl(255,30%,10%);
 $c-background-3: hsl(255,30%,12%);
 $c-background-highlight: hsl(255,30%,32%);
@@ -14,7 +14,6 @@ $c-divider: rgba(84, 84, 84, 0.48);
 $c-accent-indigo: #2c3e50;
 $c-accent-lime: hsl(160deg, 100%, 37%);
 
-
-
-
 $o-accent-darkgreen: hsla(160, 100%, 37%, 0.2);
+
+$e-drop-shadow: drop-shadow(0.2rem 0.2rem 0.25rem black);

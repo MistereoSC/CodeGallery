@@ -46,7 +46,7 @@
 }
 </style>
 
-<script setup lang="ts">
+<script setup>
 import ResourceCard from '@/components/ResourceCard.vue'
 import ResourceList from '@/assets/json/awesome-resources.json'
 </script>

@@ -21,8 +21,7 @@
 }
 </style>
 
-<script lang="ts" setup>
+<script setup>
 import AwesomeResources from '@/components/AwesomeResources.vue'
-//@ts-ignore
 import GitTracker from '@/components/GitTracker.vue'
 </script>

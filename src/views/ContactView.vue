@@ -137,7 +137,7 @@ ul {
 }
 </style>
 
-<script lang="ts" setup>
+<script setup>
 import ProjectCard from '@/components/ProjectCard.vue'
 import GitSettings from '@/assets/json/git-projects.json'
 </script>

@@ -16,7 +16,7 @@
   height: 10rem;
   width: 20rem;
   user-select: none;
-  filter: drop-shadow(0.2rem 0.2rem 0.25rem black);
+  filter: $e-drop-shadow;
   border-radius: 1rem;
   background-color: $c-background-3;
 
@@ -83,7 +83,7 @@
 }
 </style>
 
-<script lang="ts">
+<script>
 export default {
   props: {
     title: String,

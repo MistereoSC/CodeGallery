@@ -28,7 +28,7 @@
   width: min(100%, 70ch);
 
   background: $c-background-3;
-  filter: drop-shadow(5px 5px 8px black);
+  filter: $e-drop-shadow;
   border-radius: 1rem;
   background-position: top right;
   background-size: cover;
@@ -76,7 +76,7 @@
 }
 </style>
 
-<script lang="ts">
+<script>
 export default {
   props: {
     title: String,
