@@ -1,0 +1,40 @@
+$glass-background: hsl(246, 87%, 1%);
+
+$glass-gradient-1: linear-gradient(0deg, #46fa1c 0%, #03d1f6 100%);
+$glass-gradient-2: linear-gradient(162deg, #f10960 0%, #1a99e6 100%);
+$glass-gradient-3: linear-gradient(180deg, #ff0755 0%, #ffaa09 100%);
+$glass-gradient-4: linear-gradient(180deg, #1905d9 0%, #4f0fff 100%);
+
+
+$glass-gradient-ex: linear-gradient(
+  117deg,
+  rgba(26, 153, 230, 1) 0%,
+  rgba(183, 26, 230, 1) 16%,
+  rgba(26, 153, 230, 1) 42%,
+  rgba(183, 26, 230, 1) 58%,  
+  rgba(26, 153, 230, 1) 78%,
+  rgba(26, 153, 230, 1) 100%
+);
+.glass {
+  background: rgba(239,239,239,0.05);
+  background: linear-gradient(137deg, rgba(239,239,239,0.1) 0%, rgba(239,239,239,0.03) 100%); 
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 1rem;
+}
+
+
+$glass-prl-1: #fd2bff;
+$glass-prl-2: #c202d3;
+$glass-prl-3: #5e0fff;
+
+$glass-blu-1: #03d1f6;
+$glass-blu-2: #1a99e6;
+$glass-blu-3: #4f0fff;
+$glass-blu-3: #1905d9;
+
+$glass-red-1: #f10960;
+$glass-red-2: #ff0755;
+$glass-red-3: #ffaa09;
+
+$glass-grn-1: #46fa1c;

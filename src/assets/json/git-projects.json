@@ -13,7 +13,7 @@
       "title": "GW2Stats",
       "url": "https://github.com/MistereoSC/GW2Stats",
       "previewUrl": "https://i.imgur.com/aAlYNsP.png",
-      "description": "Web Project that lets you view the inventories of all your characters without having to log in.<br /> I created it as an exercise in working with APIs."
+      "description": "Web Project that lets you view the inventories of all your characters without having to log in. I created it as an exercise in working with APIs."
     },
     {
       "title": "D2RRuneCalc",
@@ -25,7 +25,7 @@
       "title": "conclurer/midnightboard",
       "url": "https://github.com/conclurer/midnightboard",
       "ignorePreview": true,
-      "description": "University Project for the development of a digital notice board, using Vue.js as the frontend and Sails.js as the backend. I worked mostly on the backend, but also helped out with the frontend in the end."
+      "description": "University Project for the development of a digital notice board, using Vue.js as the frontend and Sails.js as the backend."
     }
   ]
 }

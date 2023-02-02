@@ -15,7 +15,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $color: #fff;
 $animation-duration: 1s;
 $size: 4rem;
@@ -40,7 +40,7 @@ $size: 4rem;
   @for $idx from 1 through 11 {
     div:nth-child(#{$idx}) {
       transform: rotate($idx * 30deg);
-      animation-delay: calc($animation-duration/11 * $idx);
+      animation-delay: calc($animation-duration * 0.1 * $idx);
     }
   }
 }

@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $color: #fff;
 $animation-duration: 1.5s;
 $size: 5rem;

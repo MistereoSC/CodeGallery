@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use 'sass:math';
 $radius: 5rem;
 $color: #fff;
@@ -51,43 +51,25 @@ $animation-duration: 2s;
   }
 
   :nth-child(1):after {
-    transform: translate(
-      -0.256 * math.div($radius, 2),
-      0.034 * math.div($radius, 2)
-    );
+    transform: translate(-0.256 * $radius * 0.5, 0.034 * $radius * 0.5);
   }
   :nth-child(2):after {
-    transform: translate(
-      -0.5 * math.div($radius, 2),
-      0.134 * math.div($radius, 2)
-    );
+    transform: translate(-0.5 * $radius * 0.5, 0.134 * $radius * 0.5);
   }
   :nth-child(3):after {
-    transform: translate(
-      -0.707 * math.div($radius, 2),
-      0.293 * math.div($radius, 2)
-    );
+    transform: translate(-0.707 * $radius * 0.5, 0.293 * $radius * 0.5);
   }
   :nth-child(4):after {
-    transform: translate(
-      -0.866 * math.div($radius, 2),
-      0.5 * math.div($radius, 2)
-    );
+    transform: translate(-0.866 * $radius * 0.5, 0.5 * $radius * 0.5);
   }
   :nth-child(5):after {
-    transform: translate(
-      -0.966 * math.div($radius, 2),
-      0.741 * math.div($radius, 2)
-    );
+    transform: translate(-0.966 * $radius * 0.5, 0.741 * $radius * 0.5);
   }
   :nth-child(6):after {
-    transform: translate(-1 * math.div($radius, 2), 1 * math.div($radius, 2));
+    transform: translate(-1 * $radius * 0.5, 1 * $radius * 0.5);
   }
   :nth-child(7):after {
-    transform: translate(
-      -0.966 * math.div($radius, 2),
-      1.26 * math.div($radius, 2)
-    );
+    transform: translate(-0.966 * $radius * 0.5, 1.26 * $radius * 0.5);
   }
 }
 @keyframes rotate {

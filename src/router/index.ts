@@ -23,7 +23,17 @@ const router = createRouter({
     {
       path: '/contact',
       name: 'contact',
+      beforeEnter: (to, from) => {
+        if (window.innerWidth < 1000) {
+          return {path: '/contact/old'}
+        }
+      },
       component: () => import('../views/ContactView.vue'),
+    },
+    {
+      path: '/contact/old',
+      name: 'contactFallback',
+      component: () => import('../views/ContactViewOld.vue'),
     },
     {
       path: '/cv',
@@ -33,6 +43,11 @@ const router = createRouter({
       path: '/cssgallery',
       name: 'css-gallery',
       component: () => import('../views/CSSGallery.vue'),
+    },
+    {
+      path: '/wip',
+      name: 'wip',
+      component: () => import('../views/WIP.vue'),
     },
     {
       path: '/:pathMatch(.*)*',

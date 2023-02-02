@@ -6,14 +6,14 @@ import Navbar from '@/components/Navbar.vue'
 
 <template>
   <header>
-    <div class="navbar">
+    <div class="navbar" v-if="['contact'].indexOf($route.name) <= -1">
       <Navbar> </Navbar>
     </div>
   </header>
   <div class="view">
     <RouterView />
   </div>
-  <footer>
+  <footer v-if="['contact'].indexOf($route.name) <= -1">
     <Footer></Footer>
   </footer>
 </template>

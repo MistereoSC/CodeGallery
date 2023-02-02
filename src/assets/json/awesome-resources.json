@@ -68,5 +68,19 @@
     "url": "https://bundlephobia.com/",
     "previewUrl": "https://i.imgur.com/SawrOE8.png",
     "description": "Anxious about how large all your NPM packages are ? Find out how massive these packages really are."
+  },
+  {
+    "id": 11,
+    "title": "Fancy Border Radius",
+    "url": "https://9elements.github.io/fancy-border-radius/",
+    "previewUrl": "https://i.imgur.com/Tv6xrcll.png",
+    "description": "Create fancy blobby borders."
+  },
+  {
+    "id": 12,
+    "title": "Image Color Picker",
+    "url": "https://imagecolorpicker.com/",
+    "previewUrl": "https://i.imgur.com/pvttC3pl.png",
+    "description": "Upload an Image and pick your color, or create a color palette from the image."
   }
 ]

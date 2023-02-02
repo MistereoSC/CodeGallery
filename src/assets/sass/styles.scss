@@ -10,17 +10,28 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+
     .material-icons{
       margin-right: 0.32em;
-      margin-top: 0.05em
+      font-size: 1.25em;
+    }
+    img {
+      width: 1.25em;
+      height: 1.25em;
+      margin-right: 0.32em;
+    }
+    svg {
+      width: 1.25em;
+      height: 1.25em;
+      margin-right: 0.32em;
     }
 }
-
 @media (hover: hover) {
   a:hover {
     background-color: $o-accent-darkgreen;
   }
 }
+
 
 body {
   display: flex;
@@ -38,6 +49,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   font-size: 18px;
+  line-height: 1;
+
+  overflow-x: hidden;
 }
 
 @media (max-width: 720px) {
@@ -79,4 +93,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: $c-accent-lime;
   border-radius: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -31,3 +31,5 @@ src/assets/icons/svg
 firebase.json
 .firebase
 .firebaserc
+
+src/.backup

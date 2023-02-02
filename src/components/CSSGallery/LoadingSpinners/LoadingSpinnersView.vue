@@ -20,6 +20,14 @@
     <SpinnerContainer title="Modern Dial">
       <SpinnerDialModern></SpinnerDialModern>
     </SpinnerContainer>
+
+    <SpinnerContainer title="Basic Spinner">
+      <SpinnerBasic></SpinnerBasic>
+    </SpinnerContainer>
+
+    <SpinnerContainer title="Dual Spinner">
+      <SpinnerBasicDual></SpinnerBasicDual>
+    </SpinnerContainer>
   </div>
 </template>
 
@@ -38,4 +46,6 @@ import SpinnerDot from './Dot.vue'
 import SpinnerRipple from './Ripple.vue'
 import SpinnerDial from './Dial.vue'
 import SpinnerDialModern from './DialModern.vue'
+import SpinnerBasic from './Basic.vue'
+import SpinnerBasicDual from './BasicDual.vue'
 </script>
