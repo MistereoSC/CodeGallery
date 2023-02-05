@@ -1,7 +1,7 @@
 <template>
   <div class="resources-container">
     <div class="header">
-      <h1>#Awesome resources</h1>
+      <h1>#Awesome Tools</h1>
       <span>
         Some awesome and helpful tools I regularly use while programing.
       </span>
@@ -10,7 +10,24 @@
     </div>
     <div class="resources">
       <ResourceCard
-        v-for="item in ResourceList"
+        v-for="item in ResourceList.tools"
+        :key="item.id"
+        :title="item.title"
+        :url="item.url"
+        :src="item.previewUrl"
+        >{{ item.description }}</ResourceCard
+      >
+    </div>
+    <div class="header">
+      <h1>#Learning Resources</h1>
+      <span>
+        Some awesome sites that teach coding and help improving coding skills.
+      </span>
+      <br /><br />
+    </div>
+    <div class="resources">
+      <ResourceCard
+        v-for="item in ResourceList.resources"
         :key="item.id"
         :title="item.title"
         :url="item.url"
@@ -23,11 +40,9 @@
 
 <style lang="scss" scoped>
 .resources-container {
-  margin-bottom: 3rem;
+  margin: 2rem 0;
   .resources {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    margin: 1rem 0 5rem 0;
+    margin: 0 1rem 5rem 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

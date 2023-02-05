@@ -75,12 +75,6 @@
   top: 35%;
   color: #0000;
 }
-
-@media (max-width: 720px) {
-  .proj-card-main {
-    min-width: max(30ch, 80%);
-  }
-}
 </style>
 
 <script>

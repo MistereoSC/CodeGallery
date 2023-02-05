@@ -1,5 +1,5 @@
 <template>
-  <div class="spinner-container">
+  <div class="button-container">
     <p>{{ title }}</p>
     <slot></slot>
   </div>
@@ -7,7 +7,7 @@
 
 <style lang="scss" scoped>
 @import '@/assets/sass/_colors.scss';
-.spinner-container {
+.button-container {
   width: 10rem;
   height: 10rem;
   background-color: $c-background-3;

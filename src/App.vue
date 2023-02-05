@@ -6,14 +6,14 @@ import Navbar from '@/components/Navbar.vue'
 
 <template>
   <header>
-    <div class="navbar" v-if="['contact'].indexOf($route.name) <= -1">
+    <div class="navbar" v-if="['contact', 'wip'].indexOf($route.name) <= -1">
       <Navbar> </Navbar>
     </div>
   </header>
   <div class="view">
     <RouterView />
   </div>
-  <footer v-if="['contact'].indexOf($route.name) <= -1">
+  <footer v-if="['contact', 'wip'].indexOf($route.name) <= -1">
     <Footer></Footer>
   </footer>
 </template>
@@ -25,17 +25,12 @@ $nav-height: 3.5rem;
   height: $nav-height;
 }
 .view {
-  min-height: calc(100vh - $nav-height);
+  min-height: 100vh;
 }
 
 @media (max-width: 720px) {
   footer {
     display: none;
-  }
-  .view {
-    margin-top: -$nav-height;
-    margin-bottom: $nav-height;
-    padding-top: 2rem;
   }
 }
 </style>

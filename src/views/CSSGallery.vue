@@ -6,7 +6,11 @@
   </div>
 </template>
 
-<style></style>
+<style>
+.css-gallery-container {
+  margin-bottom: 5rem;
+}
+</style>
 
 <script setup>
 import LoadingSpinners from '@/components/CSSGallery/LoadingSpinners/LoadingSpinnersView.vue'

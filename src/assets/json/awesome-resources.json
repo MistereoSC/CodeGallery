@@ -1,4 +1,5 @@
-[
+{
+"tools": [
   {
     "id": 1,
     "title": "Codepen",
@@ -83,4 +84,61 @@
     "previewUrl": "https://i.imgur.com/pvttC3pl.png",
     "description": "Upload an Image and pick your color, or create a color palette from the image."
   }
+],
+"resources": [
+  {
+    "id": 1,
+    "title": "The Odin Project",
+    "url": "https://www.theodinproject.com/",
+    "description": "Free courses to learn Full Stack. Either in Ruby or JS."
+  },
+  {
+    "id": 2,
+    "title": "Free Code Camp",
+    "url": "https://www.freecodecamp.org/",
+    "description": "Free Courses for many Topics, ranging from Web to Machine Learning."
+  },
+  {
+    "id": 3,
+    "title": "Leetcode",
+    "url": "https://leetcode.com/",
+    "description": "Solve programming challenges in a lot of different programming languages."
+  },
+  {
+    "id": 4,
+    "title": "Advent of Code",
+    "url": "https://adventofcode.com/",
+    "description": "An annual programming competition to solve 25 challenging christmas themed puzzles."
+  },
+  {
+    "id": 5,
+    "title": "Codewars",
+    "url": "https://www.codewars.com/",
+    "description": "Compete do solve programming challenges."
+  },
+  {
+    "id": 6,
+    "title": "CSS Battle",
+    "url": "https://cssbattle.dev/",
+    "description": "Compete to recreate Pictures with only HTML/CSS."
+  },
+  {
+    "id": 7,
+    "title": "First Timers Only",
+    "url": "https://www.firsttimersonly.com/",
+    "description": "Learn how to contribute to Open Source Projects, and find your first project to contribute to."
+  },
+  {
+    "id": 8,
+    "title": "Frontend Mentor",
+    "url": "https://www.frontendmentor.io/",
+    "description": "Polish your Frontend Skills by recreating components and pages."
+  },
+  {
+    "id": 9,
+    "title": "Frontend Practice",
+    "url": "https://www.frontendpractice.com/",
+    "description": "A curated List of Websites for you to recreate to improve CSS skills."
+  }
 ]
+}

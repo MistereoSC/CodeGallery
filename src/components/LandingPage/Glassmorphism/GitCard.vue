@@ -118,7 +118,6 @@ export default {
           return data.text()
         })
         .catch((err) => {
-          console.log('Error fetching image:', err)
           return err
         })
       let src = md.match(/https:\/\/i\.imgur\.com\/.*\.[^\)]*/)
