@@ -4,7 +4,7 @@
     <container title="Minimal Social">
       <ButtonSocialMinimal></ButtonSocialMinimal>
     </container>
-    <container title="Minimal Social">
+    <container title="Stack Social">
       <ButtonSocialStacks></ButtonSocialStacks>
     </container>
   </div>

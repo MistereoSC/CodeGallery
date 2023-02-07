@@ -5,14 +5,8 @@
       <div></div>
     </div>
     <nav class="glass">
-      <RouterLink to="/">
-        <i class="material-icons">home</i>
-      </RouterLink>
-      <RouterLink to="/cssgallery">
-        <i class="material-icons">code</i>
-      </RouterLink>
-      <RouterLink to="/contact">
-        <i class="material-icons">mail</i>
+      <RouterLink v-for="itm in navItems" :to="itm.to">
+        <i class="material-icons">{{ itm.icon }}</i>
       </RouterLink>
     </nav>
   </div>
@@ -57,7 +51,7 @@ nav {
     height: 3px;
     background: $glass-grn-1;
     z-index: -1;
-    right: 1.88rem;
+    right: 7.33rem;
   }
 
   div:nth-child(1) {
@@ -78,3 +72,7 @@ nav {
   }
 }
 </style>
+
+<script setup>
+import navItems from '@/assets/json/nav-links.json'
+</script>

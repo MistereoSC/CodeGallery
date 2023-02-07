@@ -1,0 +1,22 @@
+[
+  {
+    "to":"/",
+    "icon":"home",
+    "name":"Home"
+  },
+  {
+    "to":"/cssgallery",
+    "icon":"code",
+    "name":"CSS"
+  },
+  {
+    "to":"/contact",
+    "icon":"mail",
+    "name":"About"
+  },
+  {
+    "to":"/wip",
+    "icon":"construction",
+    "name":"WIP"
+  }
+]

@@ -1,18 +1,9 @@
 <template>
-  <div class="nav-main" :class="{expanded: exp}">
-    <a class="nav-burger material-icons" @click="burgerClick">double_arrow</a>
+  <div class="nav-main">
     <nav>
-      <RouterLink to="/">
-        <span class="material-icons">home</span>
-        <p>Home</p>
-      </RouterLink>
-      <RouterLink to="/cssgallery">
-        <span class="material-icons">code</span>
-        <p>CSS Gallery</p>
-      </RouterLink>
-      <RouterLink to="/contact">
-        <span class="material-icons">mail</span>
-        <p>About</p>
+      <RouterLink v-for="itm in navItems" :to="itm.to">
+        <i class="material-icons">{{ itm.icon }}</i>
+        <p>{{ itm.name }}</p>
       </RouterLink>
     </nav>
   </div>
@@ -40,7 +31,7 @@ nav {
 @media (max-width: 720px) {
   .nav-main {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     display: flex;
@@ -51,20 +42,6 @@ nav {
     overflow-y: hidden;
 
     transition: max-height 0.5s ease-in-out;
-  }
-  .nav-burger {
-    display: block;
-    position: absolute;
-    font-size: 2rem;
-    border-radius: 1rem;
-    z-index: 2;
-    transform: rotate(-90deg);
-    transition: transform 0.5s ease-in-out;
-  }
-  .expanded {
-    .nav-burger {
-      transform: rotate(90deg);
-    }
   }
 
   nav {
@@ -114,17 +91,6 @@ nav {
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      exp: false,
-    }
-  },
-  methods: {
-    burgerClick() {
-      this.exp = !this.exp
-    },
-  },
-}
+<script setup>
+import navItems from '@/assets/json/nav-links.json'
 </script>

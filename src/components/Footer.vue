@@ -10,7 +10,11 @@
           target="_blank"
           >mail</a
         >
-        <a class="f-icon" href="http://github.com/MistereoSC" target="_blank">
+        <a
+          class="f-icon"
+          href="http://github.com/MistereoSC/CodeGallery"
+          target="_blank"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -24,11 +28,10 @@
         </a>
       </div>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink v-for="itm in navItems" :to="itm.to">
+          <p>{{ itm.name }}</p>
+        </RouterLink>
       </nav>
-      <div></div>
     </div>
   </div>
 </template>
@@ -108,3 +111,7 @@
   width: min(90%, 30ch);
 }
 </style>
+
+<script setup>
+import navItems from '@/assets/json/nav-links.json'
+</script>
