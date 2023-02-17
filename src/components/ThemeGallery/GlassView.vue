@@ -56,7 +56,7 @@
 
 <style lang="scss" scoped>
 @import '@/assets/sass/_glass.scss';
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Dosis:wght@600&family=Jura:wght@400;700&family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Dosis:wght@600&display=swap');
 
 .content {
   min-width: 45vw;

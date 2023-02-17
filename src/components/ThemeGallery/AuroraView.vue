@@ -1,20 +1,19 @@
 <template>
   <div class="body-aurora">
-    <div class="background-decoration">
-      <div class="circle"></div>
-    </div>
     <div class="content-container">
       <div class="splinters">
-        <span class="glass splinter-1"></span>
-        <span class="glass splinter-2"></span>
-        <span class="glass splinter-3"></span>
+        <span id="1"></span>
+        <span id="2"></span>
+        <span id="3"></span>
+        <span id="4"></span>
       </div>
-      <div class="content glass">
+      <div class="content glass-light">
         <h1>AURORA</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          harum sed placeat mollitia dolore, distinctio ducimus facere. Sit,
-          accusamus dolore.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          dolore similique totam nam distinctio labore vitae debitis aliquid,
+          numquam eum omnis harum sint, nihil exercitationem voluptatum
+          deleniti, enim quam vero?
         </p>
       </div>
     </div>
@@ -53,13 +52,23 @@
   z-index: 2;
 
   h1 {
-    font-size: 4rem;
-    line-height: 0.9;
+    font-family: 'Jura', sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+
+    background: $glass-gradient-ex-light;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
   p {
-    font-size: 1.5rem;
-    max-width: 30ch;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    max-width: 36ch;
     color: black;
+    opacity: 0.65;
+
+    text-align: justify;
   }
 }
 .content-container {
@@ -72,6 +81,47 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  span {
+    background: $glass-gradient-5;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.7));
+    box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.3) inset;
+
+    &[id='1'] {
+      position: absolute;
+      top: -5rem;
+      left: calc(40% - 3.75rem);
+      width: 7.5rem;
+      height: 7.5rem;
+      z-index: 1;
+    }
+    &[id='2'] {
+      position: absolute;
+      top: calc(60% - 4.5rem);
+      right: -6rem;
+      width: 9rem;
+      height: 9rem;
+      z-index: 3;
+    }
+    &[id='3'] {
+      position: absolute;
+      top: -7rem;
+      right: -5rem;
+      width: 11rem;
+      height: 11rem;
+      z-index: 1;
+    }
+    &[id='4'] {
+      position: absolute;
+      top: calc(65% - 7rem);
+      left: -8rem;
+      width: 14rem;
+      height: 14rem;
+      z-index: 1;
+    }
+  }
+
   .splinter-1 {
     position: absolute;
     top: -3.5rem;
@@ -111,15 +161,15 @@
 
   div {
     position: absolute;
-    filter: drop-shadow(4px 4px 4px black);
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.1));
   }
   .circle {
-    width: 20rem;
-    height: 20rem;
-    background: $glass-gradient-4;
+    width: 10rem;
+    height: 10rem;
+    background: $glass-gradient-5;
     border-radius: 50%;
-    right: -6rem;
-    top: 70vh;
+    left: 22vw;
+    top: 22vh;
   }
 }
 </style>

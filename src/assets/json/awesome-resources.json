@@ -90,55 +90,64 @@
     "id": 1,
     "title": "The Odin Project",
     "url": "https://www.theodinproject.com/",
-    "description": "Free courses to learn Full Stack. Either in Ruby or JS."
+    "description": "Free courses to learn Full Stack. Either in Ruby or JS.",
+    "previewUrl": "https://i.imgur.com/kOmttgQl.png"
   },
   {
     "id": 2,
     "title": "Free Code Camp",
     "url": "https://www.freecodecamp.org/",
-    "description": "Free Courses for many Topics, ranging from Web to Machine Learning."
+    "description": "Free Courses for many Topics, ranging from Web to Machine Learning.",
+    "previewUrl": "https://i.imgur.com/pLIOGTwl.png"
   },
   {
     "id": 3,
     "title": "Leetcode",
     "url": "https://leetcode.com/",
-    "description": "Solve programming challenges in a lot of different programming languages."
+    "description": "Solve programming challenges in a lot of different programming languages.",
+    "previewUrl": "https://i.imgur.com/zesMiczl.png"
   },
   {
     "id": 4,
     "title": "Advent of Code",
     "url": "https://adventofcode.com/",
-    "description": "An annual programming competition to solve 25 challenging christmas themed puzzles."
+    "description": "An annual programming competition to solve 25 challenging christmas themed puzzles.",
+    "previewUrl": "https://i.imgur.com/rRfidwFl.png"
   },
   {
     "id": 5,
     "title": "Codewars",
     "url": "https://www.codewars.com/",
-    "description": "Compete do solve programming challenges."
+    "description": "Compete do solve programming challenges.",
+    "previewUrl": "https://i.imgur.com/I4XCaJgl.png"
   },
   {
     "id": 6,
     "title": "CSS Battle",
     "url": "https://cssbattle.dev/",
-    "description": "Compete to recreate Pictures with only HTML/CSS."
+    "description": "Compete to recreate Pictures with only HTML/CSS.",
+    "previewUrl": "https://i.imgur.com/usSz4xel.png"
   },
   {
     "id": 7,
     "title": "First Timers Only",
     "url": "https://www.firsttimersonly.com/",
-    "description": "Learn how to contribute to Open Source Projects, and find your first project to contribute to."
+    "description": "Learn how to contribute to Open Source Projects, and find your first project to contribute to.",
+    "previewUrl": "https://i.imgur.com/NWjoSZwl.png"
   },
   {
     "id": 8,
     "title": "Frontend Mentor",
     "url": "https://www.frontendmentor.io/",
-    "description": "Polish your Frontend Skills by recreating components and pages."
+    "description": "Polish your Frontend Skills by recreating components and pages.",
+    "previewUrl": "https://i.imgur.com/0c1ACOQl.png"
   },
   {
     "id": 9,
     "title": "Frontend Practice",
     "url": "https://www.frontendpractice.com/",
-    "description": "A curated List of Websites for you to recreate to improve CSS skills."
+    "description": "A curated List of Websites for you to recreate to improve CSS skills.",
+    "previewUrl": "https://i.imgur.com/KMkf5YGl.png"
   }
 ]
 }
